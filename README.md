@@ -1,3 +1,5 @@
+# React-native-foodify
+
 This git repository contains code related to react-native code to handling
 - firebase auth
 - firebase db store and user profile info
@@ -7,3 +9,19 @@ This git repository contains code related to react-native code to handling
 - profile screen handling and social update
 
 - the cmd-readme.txt file contains all the commands to install dependent packages for this project.
+
+== GIT Command ==
+
+…or create a new repository on the command line
+echo "# React-native-foodify" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:howardcai/React-native-foodify.git
+git push -u origin main
+
+…or push an existing repository from the command line
+git remote add origin git@github.com:howardcai/React-native-foodify.git
+git branch -M main
+git push -u origin main
