@@ -20,6 +20,7 @@ expo install expo-media-library
 // https://reactjs.org/warnings/invalid-hook-call-warning.html
 // https://stackoverflow.com/questions/71190250/camera-not-working-with-react-native-expo-invalid-hook-call
 
+// XXX - You don't need install and use these packages XXX - 
 // npm install react-native-camera --save 
 // npm install --save react-native-camera-hooks
 // npm install react-native-fs --save
