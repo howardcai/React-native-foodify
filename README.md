@@ -30,10 +30,15 @@ echo "# React-native-foodify" >> README.md
 
 = Youtube used for expo-camera = 
 
-- Video recording and playing - 
+- Video recording and playing  
+
 https://www.youtube.com/watch?v=4VFYqw5h_qs&t=907s
 
 - CameraApp 
 
 https://www.youtube.com/watch?v=cAluIvU2seE
+
+- Store user info in firebase firestore
+
+https://youtu.be/liZ8xeGRSgY
 
