@@ -42,3 +42,13 @@ https://www.youtube.com/watch?v=cAluIvU2seE
 
 https://youtu.be/liZ8xeGRSgY
 
+- Bottom Tab Navigator
+
+https://reactnavigation.org/docs/bottom-tab-navigator/#options
+
+
+- Nesting Navigator 
+
+https://reactnavigation.org/docs/nesting-navigators/
+
+

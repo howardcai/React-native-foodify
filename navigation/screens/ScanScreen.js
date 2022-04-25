@@ -126,9 +126,9 @@ export default function ScanScreen({ navigation }) {
 
         <TouchableOpacity
           onPress={takePic}
-          style={styles.button}
+          style={[styles.button, styles.buttonOutline]}
         >
-          <Text style={styles.buttonText}>Take Picture</Text>
+          <Text style={styles.buttonOutlineText}>Take Picture</Text>
         </TouchableOpacity>
 
         <TouchableOpacity
@@ -140,7 +140,7 @@ export default function ScanScreen({ navigation }) {
 
         <TouchableOpacity
           onPress={takeVideo}
-          style={styles.button}
+          style={[styles.button, styles.buttonOutline]}
           onPress={()=> {
             setType(
               type === camera.Constants.Type.back
@@ -149,16 +149,7 @@ export default function ScanScreen({ navigation }) {
             );
           }}
         >
-          <Text style={styles.buttonText}>Flip Camera</Text>
-        </TouchableOpacity>
-
-        <TouchableOpacity
-          style={styles.button}
-          onPress={()=> 
-            status.isPlaying ? video.current.pauseAsync() : video.current.playAsync()
-          }
-        >
-          <Text style={styles.buttonText}> Video Play/Pause </Text>
+          <Text style={styles.buttonOutlineText}>Flip Camera</Text>
         </TouchableOpacity>
 
    </View>
@@ -175,6 +166,17 @@ export default function ScanScreen({ navigation }) {
       onPlaybackStatusUpdate={status => setStatus(()=>status)}
     />
 
+   <View style={styles.buttonContainer}>
+        <TouchableOpacity
+          style={styles.button}
+          onPress={()=> 
+            status.isPlaying ? video.current.pauseAsync() : video.current.playAsync()
+          }
+        >
+          <Text style={styles.buttonText}> Play & Pause </Text>
+        </TouchableOpacity>
+
+   </View>
     </ScrollView>
     </View>  
   );
@@ -307,10 +309,10 @@ const styles = StyleSheet.create({
     },
 
     buttonContainer: {
-      width: '50%',
+      width: '60%',
       justifyContent: 'center',
       alignItems: 'center',
-      marginTop: 20,
+      marginTop: 10,
       alignSelf: 'center',
     },
 
@@ -322,6 +324,20 @@ const styles = StyleSheet.create({
       alignItems: 'center',
       marginTop: 10,
    },
+
+   buttonOutline: {
+    backgroundColor: 'white',
+    marginTop: 5,
+    borderColor: '#9ac1af',
+    borderWidth: 2,
+   },
+
+   buttonOutlineText: {
+    color: '#9ac1af',
+    fontFamily: 'raleway-regular',
+    fontSize: 16,
+   },
+
    buttonText: {
      color: 'white',
      fontWeight: '700',
@@ -340,12 +356,12 @@ const styles = StyleSheet.create({
       aspectRatio: 9 / 16,
       width:350, 
       height:500,
-      marginTop: 40
+      marginTop: 20
   },
   video : {
     alignSelf: 'center',
     width:350,
-    height: 220,
-    marginTop: 40
+    height: 250,
+    marginTop: 50
   }
 });

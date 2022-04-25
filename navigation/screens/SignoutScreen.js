@@ -17,6 +17,7 @@ const SignoutScreen = () => {
 
   return (
     <View style={styles.container}>
+      <Text style={styles.titleText}>User ID: {auth.currentUser?.uid}</Text>
       <Text style={styles.titleText}>Email: {auth.currentUser?.email}</Text>
       <Image
         style={{width:100, height: 100}}
@@ -54,11 +55,11 @@ const styles = StyleSheet.create({
     fontWeight: '700',
     fontSize: 16,
   },
-  titleText: {
+  titleBold: {
     fontFamily: 'Raleway-Bold',
     fontSize:18,
   },
-  titleRegular: {
+  titleText: {
     fontFamily: 'Raleway-Regular',
     fontSize:12,
   }
