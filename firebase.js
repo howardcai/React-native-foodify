@@ -16,24 +16,24 @@ import 'firebase/firestore';
 // XXX
 
 // Kelly's Setting 
-// const firebaseConfig = {
-//     apiKey: "AIzaSyAH0MxAlt48mJsI6ZdZJqzOkC2rUhrZmLo",
-//     authDomain: "foodify-auth.firebaseapp.com",
-//     projectId: "foodify-auth",
-//     storageBucket: "foodify-auth.appspot.com",
-//     messagingSenderId: "988705571302",
-////      appId: "1:988705571302:web:fe62c5287272bf9bc7d627"
-//   };  
-
-// Daddy's firebase auth project info
 const firebaseConfig = {
-  apiKey: "AIzaSyCbPwFumgg5-t6WqhA5x7WRMpXH2Wbj-9U",
-  authDomain: "fireproject-beb1f.firebaseapp.com",
-  projectId: "fireproject-beb1f",
-  storageBucket: "fireproject-beb1f.appspot.com",
-  messagingSenderId: "23891835850",
-  appId: "1:23891835850:web:5b37d7901dd16f5bb92d33"
-};
+     apiKey: "AIzaSyAH0MxAlt48mJsI6ZdZJqzOkC2rUhrZmLo",
+     authDomain: "foodify-auth.firebaseapp.com",
+     projectId: "foodify-auth",
+     storageBucket: "foodify-auth.appspot.com",
+     messagingSenderId: "988705571302",
+     appId: "1:988705571302:web:fe62c5287272bf9bc7d627"
+  };  
+
+// another firebase auth project info
+// const firebaseConfig = {
+//  apiKey: "AIzaSyCbPwFumgg5-t6WqhA5x7WRMpXH2Wbj-9U",
+//  authDomain: "fireproject-beb1f.firebaseapp.com",
+//  projectId: "fireproject-beb1f",
+//  storageBucket: "fireproject-beb1f.appspot.com",
+//  messagingSenderId: "23891835850",
+//  appId: "1:23891835850:web:5b37d7901dd16f5bb92d33"
+//};
 
   const app = !firebase.apps.length
   ? firebase.initializeApp(firebaseConfig)

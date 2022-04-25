@@ -35,6 +35,7 @@ const LoginScreen = () => {
       .then(userCredentials => {
         const user = userCredentials.user;
         console.log('Logged in with:', user.email);
+        console.log('Logged user ID:', user.uid);
         navigation.navigate('MainContainer'); 
       })
       .catch(error => alert(error.message))
